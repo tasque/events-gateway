@@ -1,0 +1,12 @@
+
+
+management:
+  endpoint:
+    health:
+      enabled: true
+    info:
+      enabled: true
+  endpoints:
+    jmx:
+      exposure:
+        include: health, info

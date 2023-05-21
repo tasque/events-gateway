@@ -1,4 +1,39 @@
 package konchennye.sheregesh.api;
 
-public record EventRecord(String utm) {
+public record EventRecord(
+        String mylocation,
+        String timeopened,
+        String timezone,
+        String pageon,
+        String referrer,
+        String previousSites,
+        String browserVersion1b,
+        String browserLanguage,
+        String browserOnline,
+        String browserPlatform,
+        String javaEnabled,
+        String dataCookiesEnabled,
+        String dataCookies1,
+        String dataCookies2,
+        String dataStorage,
+        String sizeScreenW,
+        String sizeScreenH,
+        String sizeDocW,
+        String sizeDocH,
+        String sizeInW,
+        String sizeInH,
+        String sizeAvailW,
+        String sizeAvailH,
+        String scrColorDepth,
+        String scrPixelDepth,
+        String latitude,
+        String longitude,
+        String accuracy,
+        String altitude,
+        String altitudeAccuracy,
+        String heading,
+        String speed,
+        String timestamp,
+        String iniframe
+        ) {
 }

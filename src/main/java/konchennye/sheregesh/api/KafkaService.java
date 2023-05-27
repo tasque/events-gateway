@@ -17,7 +17,6 @@ import java.net.URI;
 public class KafkaService {
     private final KafkaTemplate<String, EnrichedData> kafkaTemplate;
 
-    
     public Mono<ServerResponse> sendToKafka(ServerRequest request) {
         return request.bodyToMono(ObjectNode.class)
                 .flatMap(event -> Mono.fromFuture(kafkaTemplate.send("topic", "key", new EnrichedData().setData(event))))

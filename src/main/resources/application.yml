@@ -4,12 +4,13 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.add.type.headers: false
   pid:
     file: events-gateway.pid
   jackson:
     serialization:
       FAIL_ON_EMPTY_BEANS: false
-
 
 management:
   endpoint:

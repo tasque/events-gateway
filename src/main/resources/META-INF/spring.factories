@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.springdoc.webflux.core.SpringDocWebFluxConfiguration,\
+org.springdoc.webflux.core.MultipleOpenApiSupportConfiguration
+org.springframework.context.ApplicationListener=\
+org.springframework.boot.context.ApplicationPidFileWriter

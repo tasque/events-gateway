@@ -6,6 +6,9 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
   pid:
     file: events-gateway.pid
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
 
 
 management:
